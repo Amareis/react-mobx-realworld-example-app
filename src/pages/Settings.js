@@ -2,7 +2,7 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { inject, observer } from "mobx-react";
 
-import ListErrors from "components/ListErrors";
+import ListErrors from "/components/ListErrors";
 
 @inject("userStore")
 @observer

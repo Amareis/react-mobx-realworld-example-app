@@ -2,15 +2,16 @@ import Header from "./components/Header";
 import React from "react";
 import { Switch, Route, withRouter } from "react-router-dom";
 import { inject, observer } from "mobx-react";
-import PrivateRoute from "components/PrivateRoute";
 
-import Login from "pages/Login";
-import Home from "pages/Home";
-import Register from "pages/Register";
-import Article from "pages/Article";
-import Editor from "pages/Editor";
-import Profile from "pages/Profile";
-import Settings from "pages/Settings";
+import PrivateRoute from "/components/PrivateRoute";
+
+import Login from "/pages/Login";
+import Home from "/pages/Home";
+import Register from "/pages/Register";
+import Article from "/pages/Article";
+import Editor from "/pages/Editor";
+import Profile from "/pages/Profile";
+import Settings from "/pages/Settings";
 
 @inject("userStore", "commonStore")
 @withRouter

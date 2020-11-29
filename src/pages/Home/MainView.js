@@ -1,4 +1,4 @@
-import ArticleList from "components/ArticleList";
+import ArticleList from "/components/ArticleList";
 import React from "react";
 import { inject, observer } from "mobx-react";
 import { withRouter, NavLink } from "react-router-dom";

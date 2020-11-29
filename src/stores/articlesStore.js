@@ -12,7 +12,7 @@ export class ArticlesStore {
   @observable predicate = {};
 
   @computed get articles() {
-    return this.articlesRegistry.values();
+    return [...this.articlesRegistry.values()];
   };
 
   clear() {

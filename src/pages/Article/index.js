@@ -3,7 +3,7 @@ import { inject, observer } from "mobx-react";
 import { withRouter } from "react-router-dom";
 import marked from "marked";
 
-import RedError from "components/RedError";
+import RedError from "/components/RedError";
 import ArticleMeta from "./ArticleMeta";
 import CommentContainer from "./CommentContainer";
 

@@ -13,3 +13,13 @@ build
 .DS_Store
 npm-debug.log
 .idea
+
+.yarn/*
+!.yarn/cache
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+.cache
+dist

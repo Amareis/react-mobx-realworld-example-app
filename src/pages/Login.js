@@ -1,6 +1,6 @@
 import React from "react";
 import { withRouter, Link } from "react-router-dom";
-import ListErrors from "components/ListErrors";
+import ListErrors from "/components/ListErrors";
 import { inject, observer } from "mobx-react";
 
 @inject("authStore")
