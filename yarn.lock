@@ -1298,10 +1298,64 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/history@npm:*":
+  version: 4.7.8
+  resolution: "@types/history@npm:4.7.8"
+  checksum: 54020371a412e949d0a329cc325253f16daf5b33e2e485135d39d3b30d3f9a8e323b00ce1162da82387c8ecf0397a8da49ad36ab309f06284326c064092879c7
+  languageName: node
+  linkType: hard
+
+"@types/prop-types@npm:*":
+  version: 15.7.3
+  resolution: "@types/prop-types@npm:15.7.3"
+  checksum: bd0eab69d5120ad3784d0c9985f902653d5924707a7f2b3702a330e762dfd61b6494954cb54ad0c52b918ffd6f1e7e27c9270e4442bc15250de348596f2f60cb
+  languageName: node
+  linkType: hard
+
 "@types/q@npm:^1.5.1":
   version: 1.5.4
   resolution: "@types/q@npm:1.5.4"
   checksum: 1a19cf2c41648b862bd25a4c26ba33dc7206f14fcf50c5b78031b59090d21176e703cd10aff8af409eafbefcebb288607d30af765ee3859637cf3fae6e875648
+  languageName: node
+  linkType: hard
+
+"@types/react-dom@npm:^17.0.0":
+  version: 17.0.0
+  resolution: "@types/react-dom@npm:17.0.0"
+  dependencies:
+    "@types/react": "*"
+  checksum: 7ca9351b6c2523327cd7afe40082a37034898f65e9d86700236682efed910ba7c9cec10e9a3b829aa7b804b18791a28743ce468fcb42e9a788bfc33b84137e45
+  languageName: node
+  linkType: hard
+
+"@types/react-router-dom@npm:^5.1.6":
+  version: 5.1.6
+  resolution: "@types/react-router-dom@npm:5.1.6"
+  dependencies:
+    "@types/history": "*"
+    "@types/react": "*"
+    "@types/react-router": "*"
+  checksum: dcff1d613899af1cbfb003eb3994f7ebce5f2633e0018588008be39af8e15971041644b7c99e6448122d661d509ee7cafce7bb5972598e8bb6701e77c9431def
+  languageName: node
+  linkType: hard
+
+"@types/react-router@npm:*":
+  version: 5.1.8
+  resolution: "@types/react-router@npm:5.1.8"
+  dependencies:
+    "@types/history": "*"
+    "@types/react": "*"
+  checksum: 8b4c8fefdba877971aeaa642d81074d0fda0db9d8891709071c8586c32c75afca1baf478c3b26bcbd404503304599d8ea3243beb4e01080ee77f48f56815ee73
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:*, @types/react@npm:^17.0.0":
+  version: 17.0.0
+  resolution: "@types/react@npm:17.0.0"
+  dependencies:
+    "@types/prop-types": "*"
+    csstype: ^3.0.2
+  checksum: dcef2034b822a949c5528fa8fa3c64da654fdbb822bd8f0488c0084d84cadb8b90af68813a6c95153d4754079f50b1cab206552c7c20f6b67a26c3641383fe31
   languageName: node
   linkType: hard
 
@@ -2587,6 +2641,13 @@ __metadata:
   dependencies:
     cssom: 0.3.x
   checksum: 5c138c9b0761a2826929ba1af06d541968c8ce2e147bc88719a9219554dbc2a7e48d2507936b4837c4cd75c07fa4988e51c6fe96dd96a45cd404c8a0012a46d3
+  languageName: node
+  linkType: hard
+
+"csstype@npm:^3.0.2":
+  version: 3.0.5
+  resolution: "csstype@npm:3.0.5"
+  checksum: d15967edea15457961ab1e3f1c4080c83792a595055551a087923b2fb67fffaddaa2eedafe10f665d12dc3f493af03c08322c9410fcd58e3dcf48104de15043c
   languageName: node
   linkType: hard
 
@@ -6089,6 +6150,9 @@ fsevents@^1.2.7:
   dependencies:
     "@babel/core": ^7.0.0-0
     "@babel/plugin-proposal-decorators": ^7.12.1
+    "@types/react": ^17.0.0
+    "@types/react-dom": ^17.0.0
+    "@types/react-router-dom": ^5.1.6
     components: ^0.1.0
     gh-pages: ^1.0.0
     history: 4.7.2
@@ -6098,11 +6162,12 @@ fsevents@^1.2.7:
     parcel: ^1.12.4
     promise.prototype.finally: ^3.1.2
     query-string: ^6.13.7
-    react: ">=15"
+    react: 16
     react-dom: ^16.0.0
     react-router-dom: ^5.2.0
     superagent: ^6.1.0
     superagent-promise: ^1.1.0
+    typescript: ^4.1.2
   languageName: unknown
   linkType: soft
 
@@ -6143,13 +6208,14 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react@npm:>=15":
-  version: 17.0.1
-  resolution: "react@npm:17.0.1"
+"react@npm:16":
+  version: 16.14.0
+  resolution: "react@npm:16.14.0"
   dependencies:
     loose-envify: ^1.1.0
     object-assign: ^4.1.1
-  checksum: a76d86ec973eb4b25a46071ac7f974adfd66ed89ad1db63043be1d976ec25417520a210e6d724b0ad937422b706afcf9962cedda9e92125992a8c0e8a95f2051
+    prop-types: ^15.6.2
+  checksum: 2769580b22952a52de3b5b2ea0f09cb904030b762d759739f49ab4da0b1f550e5c087ce3728c4be90f423d09481e0c075483c0c30b1ea9c549445c8b12020fd3
   languageName: node
   linkType: hard
 
@@ -7272,6 +7338,26 @@ fsevents@^1.2.7:
   version: 0.0.6
   resolution: "typedarray@npm:0.0.6"
   checksum: c9ef0176aaf32593514c31e5c6edc1db970847aff6e1f0a0570a6ac0cc996335792f394c2fcec59cc76691d22a01888ea073a2f3c6930cfcf7c519addf4e2ad7
+  languageName: node
+  linkType: hard
+
+typescript@^4.1.2:
+  version: 4.1.2
+  resolution: "typescript@npm:4.1.2"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: d2ac373b469e973448c7287d0fbc732dbd34d00d07911b9506bbf81469a80db6613361fc9293d021da357cb7c7da2ee32f56d8ef76446361231374200cd6aee9
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.1.2#builtin<compat/typescript>":
+  version: 4.1.2
+  resolution: "typescript@patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=5bf698"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: acfc7be6a091806432f324ad258c4a7d2a63996106a4c001db1eebb2661608a9fd0d109d0d29249c3e6890e3547a97b8580cbe0833aa64b2fb83f66e4d88a466
   languageName: node
   linkType: hard
 
